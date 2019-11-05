@@ -1,0 +1,408 @@
+header {
+  padding-left: 0.3rem;
+}
+header .logo {
+  margin: 0.3rem 0;
+  width: 2.25rem;
+  height: 0.46rem;
+}
+header .logo a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+header .logo a img {
+  width: 100%;
+  height: 100%;
+}
+.content .content-ui,
+.content .content-java,
+.content .content-web {
+  border-bottom: 5px solid;
+  border-image: linear-gradient(to right, #1ba4da, #1da1d6, #325cae) 30 30;
+}
+.content .content-ui .ui-title,
+.content .content-java .ui-title,
+.content .content-web .ui-title,
+.content .content-ui .java-title,
+.content .content-java .java-title,
+.content .content-web .java-title,
+.content .content-ui .web-title,
+.content .content-java .web-title,
+.content .content-web .web-title {
+  padding: 0.5rem 0.25rem 0;
+}
+.content .content-ui .ui-title h2,
+.content .content-java .ui-title h2,
+.content .content-web .ui-title h2,
+.content .content-ui .java-title h2,
+.content .content-java .java-title h2,
+.content .content-web .java-title h2,
+.content .content-ui .web-title h2,
+.content .content-java .web-title h2,
+.content .content-web .web-title h2 {
+  font-size: 0.5rem;
+  font-weight: normal;
+  border-bottom: 1px solid #454545;
+  padding-bottom: 0.1rem;
+}
+.content .content-ui .ui-title h2 span,
+.content .content-java .ui-title h2 span,
+.content .content-web .ui-title h2 span,
+.content .content-ui .java-title h2 span,
+.content .content-java .java-title h2 span,
+.content .content-web .java-title h2 span,
+.content .content-ui .web-title h2 span,
+.content .content-java .web-title h2 span,
+.content .content-web .web-title h2 span {
+  font-weight: normal;
+  font-size: 0.32rem;
+  color: var(--textColor);
+}
+.content .content-ui .ui-content,
+.content .content-java .ui-content,
+.content .content-web .ui-content,
+.content .content-ui .java-content,
+.content .content-java .java-content,
+.content .content-web .java-content,
+.content .content-ui .web-content,
+.content .content-java .web-content,
+.content .content-web .web-content {
+  margin-bottom: 1rem;
+}
+.content .content-ui .ui-content h3,
+.content .content-java .ui-content h3,
+.content .content-web .ui-content h3,
+.content .content-ui .java-content h3,
+.content .content-java .java-content h3,
+.content .content-web .java-content h3,
+.content .content-ui .web-content h3,
+.content .content-java .web-content h3,
+.content .content-web .web-content h3 {
+  font-size: 0.28rem;
+  padding: 0rem 0.4rem;
+  font-weight: normal;
+  margin-bottom: 0.5rem;
+  line-height: 0.45rem;
+}
+.content .content-ui .ui-content .ui-label,
+.content .content-java .ui-content .ui-label,
+.content .content-web .ui-content .ui-label,
+.content .content-ui .java-content .ui-label,
+.content .content-java .java-content .ui-label,
+.content .content-web .java-content .ui-label,
+.content .content-ui .web-content .ui-label,
+.content .content-java .web-content .ui-label,
+.content .content-web .web-content .ui-label,
+.content .content-ui .ui-content .java-label,
+.content .content-java .ui-content .java-label,
+.content .content-web .ui-content .java-label,
+.content .content-ui .java-content .java-label,
+.content .content-java .java-content .java-label,
+.content .content-web .java-content .java-label,
+.content .content-ui .web-content .java-label,
+.content .content-java .web-content .java-label,
+.content .content-web .web-content .java-label,
+.content .content-ui .ui-content .web-label,
+.content .content-java .ui-content .web-label,
+.content .content-web .ui-content .web-label,
+.content .content-ui .java-content .web-label,
+.content .content-java .java-content .web-label,
+.content .content-web .java-content .web-label,
+.content .content-ui .web-content .web-label,
+.content .content-java .web-content .web-label,
+.content .content-web .web-content .web-label {
+  text-align: center;
+  padding: 0.45rem 0;
+}
+.content .content-ui .ui-content .ui-label h2,
+.content .content-java .ui-content .ui-label h2,
+.content .content-web .ui-content .ui-label h2,
+.content .content-ui .java-content .ui-label h2,
+.content .content-java .java-content .ui-label h2,
+.content .content-web .java-content .ui-label h2,
+.content .content-ui .web-content .ui-label h2,
+.content .content-java .web-content .ui-label h2,
+.content .content-web .web-content .ui-label h2,
+.content .content-ui .ui-content .java-label h2,
+.content .content-java .ui-content .java-label h2,
+.content .content-web .ui-content .java-label h2,
+.content .content-ui .java-content .java-label h2,
+.content .content-java .java-content .java-label h2,
+.content .content-web .java-content .java-label h2,
+.content .content-ui .web-content .java-label h2,
+.content .content-java .web-content .java-label h2,
+.content .content-web .web-content .java-label h2,
+.content .content-ui .ui-content .web-label h2,
+.content .content-java .ui-content .web-label h2,
+.content .content-web .ui-content .web-label h2,
+.content .content-ui .java-content .web-label h2,
+.content .content-java .java-content .web-label h2,
+.content .content-web .java-content .web-label h2,
+.content .content-ui .web-content .web-label h2,
+.content .content-java .web-content .web-label h2,
+.content .content-web .web-content .web-label h2 {
+  padding: 0.1rem 0.2rem;
+  display: inline-block;
+  font-size: 0.5rem;
+  font-weight: normal;
+  background: linear-gradient(to right, #315eaf, #277fc3, #1ca0d7);
+  border-radius: 0.1rem;
+}
+.content .content-ui .ui-content .ui-text,
+.content .content-java .ui-content .ui-text,
+.content .content-web .ui-content .ui-text,
+.content .content-ui .java-content .ui-text,
+.content .content-java .java-content .ui-text,
+.content .content-web .java-content .ui-text,
+.content .content-ui .web-content .ui-text,
+.content .content-java .web-content .ui-text,
+.content .content-web .web-content .ui-text,
+.content .content-ui .ui-content .java-text,
+.content .content-java .ui-content .java-text,
+.content .content-web .ui-content .java-text,
+.content .content-ui .java-content .java-text,
+.content .content-java .java-content .java-text,
+.content .content-web .java-content .java-text,
+.content .content-ui .web-content .java-text,
+.content .content-java .web-content .java-text,
+.content .content-web .web-content .java-text,
+.content .content-ui .ui-content .web-text,
+.content .content-java .ui-content .web-text,
+.content .content-web .ui-content .web-text,
+.content .content-ui .java-content .web-text,
+.content .content-java .java-content .web-text,
+.content .content-web .java-content .web-text,
+.content .content-ui .web-content .web-text,
+.content .content-java .web-content .web-text,
+.content .content-web .web-content .web-text {
+  padding: 0 0.4rem;
+  font-size: 0.28rem;
+  color: var(--textColor);
+  margin-bottom: 0.5rem;
+  line-height: 0.45rem;
+}
+.content .content-ui .ui-content .ui-photo img,
+.content .content-java .ui-content .ui-photo img,
+.content .content-web .ui-content .ui-photo img,
+.content .content-ui .java-content .ui-photo img,
+.content .content-java .java-content .ui-photo img,
+.content .content-web .java-content .ui-photo img,
+.content .content-ui .web-content .ui-photo img,
+.content .content-java .web-content .ui-photo img,
+.content .content-web .web-content .ui-photo img {
+  width: 100%;
+  height: 100%;
+}
+.content .content-java {
+  background-color: var(--themeBackgroundColor);
+  border: 0.01rem solid #000;
+}
+.content .content-java .java-content .java-text {
+  font-size: 0.3rem;
+}
+.content .content-java .java-content .java-text p {
+  margin: 0.5rem 0;
+  line-height: 0.45rem;
+}
+.content .content-web {
+  border: none;
+}
+.content .outline {
+  margin-bottom: 0.5rem;
+}
+.content .outline > h2 {
+  padding: 0.55rem 0;
+  font-size: 0.33rem;
+  font-weight: normal;
+  color: var(--textColor);
+  padding-left: 0.25rem;
+}
+.content .outline .outline-swiper {
+  display: flex;
+}
+.content .outline .outline-swiper .outline-left-btn {
+  width: 12%;
+  position: relative;
+}
+.content .outline .outline-swiper .outline-left-btn::after {
+  content: ' ';
+  width: 0.4rem;
+  height: 0.4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-left: 0.05rem solid #fff;
+  border-top: 0.05rem solid #fff;
+  transform: translateY(-50%) translateX(-25%) rotate(-45deg);
+}
+.content .outline .outline-swiper .outline-slide {
+  width: 76%;
+  background-color: #424242;
+  border-radius: 0.3rem;
+  overflow: hidden;
+}
+.content .outline .outline-swiper .outline-slide > ul {
+  text-align: center;
+  position: relative;
+  padding-bottom: 0.2rem;
+}
+.content .outline .outline-swiper .outline-slide > ul::after {
+  content: " ";
+  width: 100%;
+  height: 0.1rem;
+  background: linear-gradient(to right, #1ba4da, #1da1d6, #325cae);
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+}
+.content .outline .outline-swiper .outline-slide > ul::before {
+  content: " ";
+  width: 100%;
+  height: 0.15rem;
+  background-color: #363636;
+  position: absolute;
+  bottom: 0rem;
+  left: 0rem;
+}
+.content .outline .outline-swiper .outline-slide > ul li h2 {
+  padding: 0.45rem 0.8rem 0.1rem 0.8rem;
+  display: inline-block;
+  font-size: 0.5rem;
+  font-weight: normal;
+  border-bottom: 0.01rem solid #747474;
+  margin-bottom: 0.2rem;
+}
+.content .outline .outline-swiper .outline-slide > ul li p {
+  color: var(--textColor);
+  font-size: 0.3rem;
+  line-height: 0.5rem;
+}
+.content .outline .outline-swiper .outline-right-btn {
+  width: 12%;
+  position: relative;
+}
+.content .outline .outline-swiper .outline-right-btn::after {
+  content: ' ';
+  width: 0.4rem;
+  height: 0.4rem;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  border-left: 0.05rem solid #fff;
+  border-top: 0.05rem solid #fff;
+  transform: translateY(-50%) translateX(25%) rotate(135deg);
+}
+.content .case .case-title > h2 {
+  padding: 0.55rem 0;
+  font-size: 0.33rem;
+  font-weight: normal;
+  color: var(--textColor);
+  padding-left: 0.25rem;
+}
+.content .case .case-list {
+  margin-bottom: 1.5rem;
+}
+.content .case .case-list .case-app-name {
+  text-align: center;
+}
+.content .case .case-list .case-app-name h3 {
+  font-size: 0.5rem;
+  color: var(--textColor);
+}
+.content .case .case-list .case-synopsis {
+  text-align: center;
+}
+.content .case .case-list .case-synopsis p {
+  font-size: 0.7rem;
+}
+.content .case .case-list .case-photo {
+  margin: 0.5rem 0 1rem 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.content .case .case-list .case-photo img {
+  width: 90%;
+  z-index: 100;
+}
+.content .case .case-list .case-photo span {
+  display: block;
+  width: 90%;
+  height: 0.9rem;
+  background: linear-gradient(to bottom, #4a4a4a, #252525);
+  z-index: 10;
+  position: absolute;
+  bottom: -20px;
+}
+.content .case .case-list .case-text {
+  font-size: 0.3rem;
+  color: var(--textColor);
+  padding: 0 0.28rem;
+  line-height: 0.5rem;
+}
+.content .case .case-list .miao-shop img {
+  width: 45%;
+}
+.content .case .case-list .chengXiangQu,
+.content .case .case-list .wisdom110,
+.content .case .case-list .painting {
+  margin: 0.5rem 0 0;
+}
+.content .case .case-list .mazu span {
+  width: 60%;
+  position: absolute;
+  bottom: -20px;
+  left: 20px;
+}
+footer h2 {
+  font-size: 0.28rem;
+  margin-bottom: 0.2rem;
+  padding-left: 0.3rem;
+}
+footer ul {
+  padding: 0 1.5rem 0 0.7rem;
+  margin-bottom: 0.6rem;
+}
+footer ul li {
+  list-style-type: disc;
+  font-size: 0.25rem;
+  color: #959595;
+  margin-bottom: 0.1rem;
+}
+footer .map {
+  border-radius: 0.1rem;
+  width: 7rem;
+  height: 3.7rem;
+  background-color: #fff;
+  margin: 0 auto;
+}
+footer .pusi-code {
+  margin-top: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .pusi-code h4 {
+  font-size: 0.2rem;
+  color: #959599;
+  margin-bottom: 0.4rem;
+}
+footer .pusi-code h4 span {
+  margin: 0 0.15rem;
+}
+footer .pusi-code .code {
+  margin-bottom: 0.3rem;
+  display: flex;
+  width: 80%;
+  justify-content: center;
+}
+footer .pusi-code .code img {
+  width: 40%;
+  margin: 0 0.3rem;
+}
+footer .pusi-code .copy {
+  font-size: 0.18rem;
+  color: #959599;
+  margin-bottom: 2rem;
+}

@@ -1,0 +1,370 @@
+header {
+    padding-left: 0.3rem;
+
+    .logo {
+        margin: 0.3rem 0;
+        width: 2.25rem;
+        height: 0.46rem;
+
+        a {
+            display: flex;
+            width: 100%;
+            height: 100%;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+.content {
+
+    // UI java web课程介绍
+    .content-ui,
+    .content-java,
+    .content-web {
+        border-bottom: 5px solid;
+        border-image: linear-gradient(to right, #1ba4da, #1da1d6, #325cae) 30 30;
+
+        .ui-title,
+        .java-title,
+        .web-title {
+            padding: 0.5rem 0.25rem 0;
+
+            h2 {
+                font-size: 0.5rem;
+                font-weight: normal;
+                border-bottom: 1px solid #454545;
+                padding-bottom: 0.1rem;
+
+                span {
+                    font-weight: normal;
+                    font-size: 0.32rem;
+                    color: var(--textColor);
+                }
+            }
+        }
+
+        .ui-content,
+        .java-content,
+        .web-content {
+            margin-bottom: 1rem;
+
+            h3 {
+                font-size: 0.28rem;
+                padding: 0rem 0.4rem;
+                font-weight: normal;
+                margin-bottom: 0.5rem;
+                line-height: 0.45rem;
+            }
+
+            .ui-label,
+            .java-label,
+            .web-label {
+                text-align: center;
+                padding: 0.45rem 0;
+
+                h2 {
+                    padding: 0.1rem 0.2rem;
+                    display: inline-block;
+                    font-size: 0.5rem;
+                    font-weight: normal;
+                    background: linear-gradient(to right, #315eaf, #277fc3, #1ca0d7);
+                    border-radius: 0.1rem;
+                }
+            }
+
+            .ui-text,
+            .java-text,
+            .web-text {
+                padding: 0 0.4rem;
+                font-size: 0.28rem;
+                color: var(--textColor);
+                margin-bottom: 0.5rem;
+                line-height: 0.45rem;
+            }
+
+            .ui-photo {
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    .content-java {
+        background-color: var(--themeBackgroundColor);
+        border: 0.01rem solid #000;
+
+        .java-content {
+            .java-text {
+                font-size: 0.3rem;
+
+                p {
+                    margin: 0.5rem 0;
+                    line-height: 0.45rem;
+                }
+            }
+        }
+    }
+
+    .content-web {
+        border: none;
+    }
+
+    // 课程大纲
+    .outline {
+        margin-bottom: 0.5rem;
+
+        >h2 {
+            padding: 0.55rem 0;
+            font-size: 0.33rem;
+            font-weight: normal;
+            color: var(--textColor);
+            padding-left: 0.25rem;
+        }
+
+        // 课程大纲轮播图
+        .outline-swiper {
+            display: flex;
+
+            .outline-left-btn {
+                width: 12%;
+                position: relative;
+
+                &::after {
+                    content: ' ';
+                    width: 0.4rem;
+                    height: 0.4rem;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    border-left: 0.05rem solid #fff;
+                    border-top: 0.05rem solid #fff;
+                    transform: translateY(-50%) translateX(-25%) rotate(-45deg);
+                }
+            }
+
+            .outline-slide {
+                width: 76%;
+                background-color: #424242;
+                border-radius: 0.3rem;
+                overflow: hidden;
+
+                >ul {
+                    text-align: center;
+                    position: relative;
+                    padding-bottom: 0.2rem;
+
+                    &::after {
+                        content: " ";
+                        width: 100%;
+                        height: 0.1rem;
+                        background: linear-gradient(to right, #1ba4da, #1da1d6, #325cae);
+                        position: absolute;
+                        top: 0rem;
+                        left: 0rem;
+                    }
+
+                    &::before {
+                        content: " ";
+                        width: 100%;
+                        height: 0.15rem;
+                        background-color: #363636;
+                        position: absolute;
+                        bottom: 0rem;
+                        left: 0rem;
+                    }
+
+                    li {
+                        h2 {
+                            padding: 0.45rem 0.8rem 0.1rem 0.8rem;
+                            display: inline-block;
+                            font-size: 0.5rem;
+                            font-weight: normal;
+                            border-bottom: 0.01rem solid #747474;
+                            margin-bottom: 0.2rem;
+                        }
+
+                        p {
+                            color: var(--textColor);
+                            font-size: 0.3rem;
+                            line-height: 0.5rem;
+                        }
+                    }
+                }
+            }
+
+            .outline-right-btn {
+                width: 12%;
+                position: relative;
+
+                &::after {
+                    content: ' ';
+                    width: 0.4rem;
+                    height: 0.4rem;
+                    position: absolute;
+                    top: 50%;
+                    right: 50%;
+                    border-left: 0.05rem solid #fff;
+                    border-top: 0.05rem solid #fff;
+                    transform: translateY(-50%) translateX(25%) rotate(135deg);
+                }
+            }
+        }
+
+    }
+
+    // 案例展示
+    .case {
+        .case-title {
+            >h2 {
+                padding: 0.55rem 0;
+                font-size: 0.33rem;
+                font-weight: normal;
+                color: var(--textColor);
+                padding-left: 0.25rem;
+            }
+        }
+
+        .case-list {
+            margin-bottom: 1.5rem;
+
+            .case-app-name {
+                text-align: center;
+
+                h3 {
+                    font-size: 0.5rem;
+                    color: var(--textColor);
+                }
+            }
+
+            .case-synopsis {
+                text-align: center;
+
+                p {
+                    font-size: 0.7rem;
+                }
+            }
+
+            .case-photo {
+                margin: 0.5rem 0 1rem 0;
+                display: flex;
+                justify-content: center;
+                position: relative;
+
+                img {
+                    width: 90%;
+                    z-index: 100;
+                }
+
+                span {
+                    display: block;
+                    width: 90%;
+                    height: 0.9rem;
+                    background: linear-gradient(to bottom, #4a4a4a, #252525);
+                    z-index: 10;
+                    position: absolute;
+                    bottom: -20px;
+                }
+            }
+
+            .case-text {
+                font-size: 0.3rem;
+                color: var(--textColor);
+                padding: 0 0.28rem;
+                line-height: 0.5rem;
+            }
+
+            .miao-shop {
+                img {
+                    width: 45%;
+                }
+            }
+
+            .chengXiangQu,
+            .wisdom110,
+            .painting {
+                margin: 0.5rem 0 0;
+            }
+
+            .mazu {
+                span {
+                    width: 60%;
+                    position: absolute;
+                    bottom: -20px;
+                    left: 20px;
+                }
+            }
+        }
+    }
+}
+
+// 底部
+footer {
+    h2 {
+        font-size: 0.28rem;
+        margin-bottom: 0.2rem;
+        padding-left: 0.3rem;
+    }
+
+    ul {
+        padding: 0 1.5rem 0 0.7rem;
+        margin-bottom: 0.6rem;
+
+        li {
+            list-style-type: disc;
+            font-size: 0.25rem;
+            color: #959595;
+            margin-bottom: 0.1rem;
+        }
+    }
+
+    .map {
+        border-radius: 0.1rem;
+        width: 7rem;
+        height: 3.7rem;
+        background-color: #fff;
+        margin: 0 auto;
+    }
+
+    .pusi-code {
+        margin-top: 0.6rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h4 {
+            font-size: 0.2rem;
+            color: #959599;
+
+            span {
+                margin: 0 0.15rem;
+            }
+
+            margin-bottom: 0.4rem;
+        }
+
+        .code {
+            margin-bottom: 0.3rem;
+            display: flex;
+            width: 80%;
+            justify-content: center;
+
+            img {
+                width: 40%;
+                margin: 0 0.3rem;
+            }
+        }
+
+        .copy {
+            font-size: 0.18rem;
+            color: #959599;
+            margin-bottom: 2rem;
+        }
+    }
+}

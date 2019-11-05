@@ -1,9 +1,5 @@
-body {
-    background-color: var(--backgroundColor);
-    color: #fff;
-}
-
 header {
+    padding-left: 0.3rem;
     .logo {
         margin: 0.3rem 0;
         width: 2.25rem;
@@ -45,7 +41,7 @@ header {
 
         p {
             font-size: 0.5rem;
-            color: #959595;
+            color: var(--textColor);
 
             span {
                 margin: 0 0.3rem;
@@ -72,7 +68,7 @@ header {
                 p {
                     vertical-align: top;
                     font-size: 0.34rem;
-                    color: #959595;
+                    color: var(--textColor);
                 }
 
                 h2 {
@@ -87,7 +83,7 @@ header {
                 ul {
                     display: flex;
                     margin-top: 0.6rem;
-                    color: #959595;
+                    color: var(--textColor);
 
                     li {
                         background-color: #484848;
@@ -118,7 +114,7 @@ header {
             li {
                 p {
                     font-size: 0.24rem;
-                    color: #959595;
+                    color: var(--textColor);
                     letter-spacing: 0.1rem;
 
                     span {
@@ -147,7 +143,7 @@ header {
                 h4 {
                     font-weight: normal;
                     font-size: 0.32rem;
-                    color: #959595;
+                    color: var(--textColor);
                 }
             }
         }
@@ -156,6 +152,7 @@ header {
     // 课程介绍
     .curriculum {
         border-bottom: 0.01rem solid #000;
+
         .touch-swiper {
             display: flex;
 
@@ -238,7 +235,7 @@ header {
                             h3 {
                                 font-size: 0.44rem;
                                 font-weight: normal;
-                                color: #959595;
+                                color: var(--textColor);
                             }
                         }
 
@@ -276,7 +273,7 @@ header {
             margin-bottom: 0.7rem;
             font-size: 0.22rem;
             display: flex;
-            color: #959595;
+            color: var(--textColor);
             justify-content: center;
 
             li {
@@ -288,46 +285,217 @@ header {
             }
         }
     }
+
     // 校园新闻
-    .news{
-        .news-title{
+    .news {
+        margin-bottom: 0.8rem;
+
+        .news-title {
             text-align: center;
-            padding:0.7rem 0;
-            h2{
+            padding: 0.7rem 0;
+
+            h2 {
                 font-size: 0.5rem;
                 font-weight: normal;
-                color: #959595;
+                color: var(--textColor);
             }
         }
-        .news-content{
+
+        .news-content {
             padding: 0 0.27rem;
-            .news-list{
+
+            .news-list {
                 border-bottom: 0.01rem solid #393939;
                 padding-bottom: 0.28rem;
-                a{
+                margin-bottom: 0.3rem;
+
+                a {
                     display: flex;
-                    
-                    .news-left-photo{
+
+                    .news-left-photo {
                         width: 1.52rem;
                         height: 1.19rem;
                         background-color: #3b3b3b;
                         margin-right: 0.28rem;
                     }
-                    .news-right{
-                        h2{
+
+                    .news-right {
+                        h2 {
                             font-size: 0.32rem;
+                            font-weight: normal;
+                            margin-bottom: 0.1rem;
                         }
-                        h3{
+
+                        h3 {
                             font-weight: normal;
                             font-size: 0.24rem;
+                            color: var(--textColor);
+                            margin-bottom: 0.1rem;
                         }
-                        p{
+
+                        p {
                             font-size: 0.18rem;
                             text-align: right;
+                            color: var(--textColor);
                         }
                     }
                 }
             }
+        }
+    }
+
+    // 学校风采
+    .environment {
+        background-color: var(--themeBackgroundColor);
+        padding: 0.8rem 0;
+        position: relative;
+        &::after{
+            content: " ";
+            width: 80%;
+            height: 0.03rem;
+            background:linear-gradient(to right,
+                rgba(49,93,173,.0)0%,
+                rgba(49,93,173,.2)10%,
+                rgba(49,93,173,.4)20%,
+                rgba(49,93,173,.6)30%,
+                rgba(49,93,173,.9)40%,
+                rgba(29,154,206,.9)50%,
+                rgba(29,154,206,.8)60%,
+                rgba(29,154,206,.6)70%,
+                rgba(29,154,206,.4)80%,
+                rgba(29,154,206,.2)90%,
+                rgba(29,154,206,.0)100%
+            );
+            position: absolute;
+            top:0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            li {
+                h2 {
+                    font-size: 0.5rem;
+                    font-weight: normal;
+                    color: var(--textColor);
+                    margin-bottom: 0.5rem;
+                }
+
+                a {
+                    font-size: 0.24rem;
+                    color: #00a0e9;
+                    display: inline-block;
+                    padding: 0.2rem 0;
+                }
+
+                h3 {
+                    font-size: 0.5rem;
+                    font-weight: normal;
+                    line-height: 0.8rem;
+                }
+
+                p {
+                    font-size: 0.25rem;
+                    color: var(--textColor);
+                    line-height: 0.45rem;
+                }
+            }
+
+            .pusi-introduce {
+                margin-top: 0.6rem;
+            }
+
+            .environment-photo {
+                width: 5.75rem;
+                height: 3.92rem;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    //璞思大家庭
+    .pusi-familiar {
+        height: 5rem;
+
+        h2 {
+            font-size: 0.5rem;
+            color: var(--textColor);
+        }
+
+        .pusi-swiper {}
+    }
+
+    // 关于我们
+    .about {
+        height: 6.5rem;
+        h2 {
+
+            font-size: 0.5rem;
+            color: var(--textColor);
+        }
+    }
+}
+
+// 底部
+footer {
+    h2 {
+        font-size: 0.28rem;
+        margin-bottom: 0.2rem;
+        padding-left: 0.3rem;
+    }
+
+    ul {
+        padding:0 1.5rem 0 0.7rem;
+        margin-bottom: 0.6rem;
+        li {
+            list-style-type: disc;
+            font-size: 0.25rem;
+            color: var(--textColor);
+            margin-bottom: 0.1rem;
+        }
+    }
+    .map{
+        border-radius: 0.1rem;
+        width: 7rem;
+        height: 3.7rem;
+        background-color: #fff;
+        margin:0 auto;
+    }
+    .pusi-code{
+        margin-top: 0.6rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h4{
+            font-size: 0.2rem;
+            color: #959599;
+            span{
+                margin:0 0.15rem;
+            }
+            margin-bottom: 0.4rem;
+        }
+        .code{
+            margin-bottom: 0.3rem;
+            display: flex;
+            width: 80%;
+            justify-content:center ;
+            img{
+                width: 40%;
+                margin:0 0.3rem;
+            }
+        }
+        .copy{
+            font-size: 0.18rem;
+            color: #959599;
+            margin-bottom: 2rem;
         }
     }
 }
