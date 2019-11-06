@@ -1,79 +1,121 @@
-@charset "utf-8";
-
-/* 禁用iPhone中Safari的字号自动调整 */
-/* html {
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  解决IOS默认滑动很卡的情况
-  -webkit-overflow-scrolling : touch;
-    height: 100%;
-    width: 100%;
-} */
-body,
-div,
-dl,
-dt,
-dd,
-ul,
-ol,
-li,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-pre,
-code,
-form,
-fieldset,
-legend,
-input,
-textarea,
-p,
-blockquote,
-th,
-td,
-hr,
-button,
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+header {
+  padding-left: 0.3rem;
 }
-
-body {
-  height: 100%;
+header .logo {
+  margin: 0.3rem 0;
+  width: 2.25rem;
+  height: 0.46rem;
+}
+header .logo a {
+  display: flex;
   width: 100%;
-  --themeBackgroundColor: #363636;
-  --backgroundColor: #252525;
-  background-color: var(--backgroundColor);
-  color: #fff;
-  font-size: 0.32rem;
-  --textColor:#959595;
+  height: 100%;
 }
-
-ul li {
-  list-style: none;
+header .logo a img {
+  width: 100%;
+  height: 100%;
 }
-
-a {
-  outline: none;
-  color: #fff;
-  text-decoration: none;
+footer h2 {
+  font-size: 0.28rem;
+  margin-bottom: 0.2rem;
+  padding-left: 0.3rem;
+  display: inline-block;
 }
-input{
-  outline: none;
-  background:none;
-  border:none;
+footer ul {
+  padding: 0 1.5rem 0 0.7rem;
+  margin-bottom: 0.6rem;
+}
+footer ul li {
+  list-style-type: disc;
+  font-size: 0.25rem;
+  color: #959595;
+  margin-bottom: 0.1rem;
+}
+footer .map {
+  border-radius: 0.1rem;
+  width: 7rem;
+  height: 3.7rem;
+  background-color: #fff;
+  margin: 0 auto;
+}
+footer .pusi-code {
+  margin-top: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .pusi-code h4 {
+  font-size: 0.2rem;
+  color: #959599;
+  margin-bottom: 0.4rem;
+}
+footer .pusi-code h4 span {
+  margin: 0 0.15rem;
+}
+footer .pusi-code .code {
+  margin-bottom: 0.3rem;
+  display: flex;
+  width: 80%;
+  height: 2.16rem;
+  justify-content: center;
+}
+footer .pusi-code .code img {
+  width: 2.16rem;
+  height: 100%;
+  margin: 0 0.3rem;
+}
+footer .pusi-code .copy {
+  font-size: 0.18rem;
+  color: #959599;
+  margin-bottom: 2rem;
+}
+@media screen and (max-width: 320px) {
+  footer .pusi-code .copy {
+    transform: scale(0.8);
+  }
+}
+@media screen and (max-width: 280px) {
+  footer .pusi-code .copy {
+    transform: scale(0.6);
+  }
+}
+.tabBar {
+  position: fixed;
+  bottom: 0.3rem;
+  width: 100%;
+}
+.tabBar ul {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+.tabBar ul li {
+  flex: 1;
+}
+.tabBar ul li a {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tabBar ul li a:hover,
+.tabBar ul li a:active,
+.tabBar ul li a:visited,
+.tabBar ul li a:link,
+.tabBar ul li a:focus {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.tabBar ul li a .tabBar-photo {
+  height: 70%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.tabBar ul li a .tabBar-photo img {
+  width: 60%;
+}
+.tabBar ul li a p {
+  height: 30%;
+  font-size: 0.2rem;
 }

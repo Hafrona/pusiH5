@@ -1,0 +1,119 @@
+.content {
+  width: 100%;
+  margin-bottom: 0.8rem;
+}
+.content .campus {
+  width: 90%;
+  margin: 0 auto;
+}
+.content .campus h2 {
+  font-size: 0.33rem;
+  font-weight: normal;
+  color: var(--textColor);
+  margin-bottom: 0.6rem;
+  padding-top: 0.6rem;
+}
+.content .campus ul li {
+  margin-bottom: 0.6rem;
+  border-radius: 0.3rem;
+}
+.content .campus ul li img {
+  width: 100%;
+  border-radius: 0.3rem;
+}
+.content .campus span {
+  display: block;
+  font-size: 0.3rem;
+  color: var(--textColor);
+  margin-bottom: 0.6rem;
+}
+.content .classroom {
+  width: 100%;
+  background-color: var(--themeBackgroundColor);
+  border: 0.01rem solid #000;
+}
+.content .classroom .classroom-content {
+  width: 90%;
+  margin: 0 auto;
+}
+.content .classroom .classroom-content h2 {
+  font-size: 0.33rem;
+  font-weight: normal;
+  color: var(--textColor);
+  margin-bottom: 0.6rem;
+  padding-top: 0.6rem;
+}
+.content .classroom .classroom-content .classroom-top {
+  padding-bottom: 0.6rem;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 0.7rem;
+}
+.content .classroom .classroom-content .classroom-top h4 {
+  font-size: 0.3rem;
+  font-weight: normal;
+  color: var(--textColor);
+}
+.content .classroom .classroom-content .classroom-top span {
+  font-size: 0.5rem;
+}
+.content .classroom .classroom-content .classroom-photo ul li {
+  margin-bottom: 0.6rem;
+  border-radius: 0.3rem;
+}
+.content .classroom .classroom-content .classroom-photo ul li img {
+  width: 100%;
+  border-radius: 0.3rem;
+}
+.content .classroom .classroom-content > ul {
+  text-align: center;
+  line-height: 0.6rem;
+  margin-bottom: 0.7rem;
+}
+.content .classroom .classroom-content > ul li {
+  font-size: 0.33rem;
+  color: var(--textColor);
+}
+.content .tenet {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 0.6rem;
+}
+.content .tenet h3 {
+  font-size: 0.33rem;
+  font-weight: normal;
+  color: var(--textColor);
+  margin-bottom: 0.6rem;
+  padding-top: 0.6rem;
+}
+.content .tenet .tenet-photo {
+  margin: 0.6rem 0;
+}
+.content .tenet .tenet-photo img {
+  width: 100%;
+}
+.content .tenet h2 {
+  font-size: 0.7rem;
+  font-weight: normal;
+  text-align: center;
+}
+.content .tenet .tenet-text {
+  line-height: 0.5rem;
+}
+.content .tenet .tenet-text p {
+  font-size: 0.3rem;
+  letter-spacing: 0.02rem;
+  color: var(--textColor);
+}
+.content .tenet .tenet-text p span {
+  color: #fff;
+}
+.content .target,
+.content .teaching {
+  border: 0.01rem solid #000;
+  background-color: var(--themeBackgroundColor);
+}
+.content .teaching .tenet-text p {
+  margin-bottom: 0.6rem;
+}

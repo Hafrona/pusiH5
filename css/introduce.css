@@ -1,20 +1,3 @@
-header {
-  padding-left: 0.3rem;
-}
-header .logo {
-  margin: 0.3rem 0;
-  width: 2.25rem;
-  height: 0.46rem;
-}
-header .logo a {
-  display: flex;
-  width: 100%;
-  height: 100%;
-}
-header .logo a img {
-  width: 100%;
-  height: 100%;
-}
 .content .content-ui,
 .content .content-java,
 .content .content-web {
@@ -354,55 +337,4 @@ header .logo a img {
   position: absolute;
   bottom: -20px;
   left: 20px;
-}
-footer h2 {
-  font-size: 0.28rem;
-  margin-bottom: 0.2rem;
-  padding-left: 0.3rem;
-}
-footer ul {
-  padding: 0 1.5rem 0 0.7rem;
-  margin-bottom: 0.6rem;
-}
-footer ul li {
-  list-style-type: disc;
-  font-size: 0.25rem;
-  color: #959595;
-  margin-bottom: 0.1rem;
-}
-footer .map {
-  border-radius: 0.1rem;
-  width: 7rem;
-  height: 3.7rem;
-  background-color: #fff;
-  margin: 0 auto;
-}
-footer .pusi-code {
-  margin-top: 0.6rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-footer .pusi-code h4 {
-  font-size: 0.2rem;
-  color: #959599;
-  margin-bottom: 0.4rem;
-}
-footer .pusi-code h4 span {
-  margin: 0 0.15rem;
-}
-footer .pusi-code .code {
-  margin-bottom: 0.3rem;
-  display: flex;
-  width: 80%;
-  justify-content: center;
-}
-footer .pusi-code .code img {
-  width: 40%;
-  margin: 0 0.3rem;
-}
-footer .pusi-code .copy {
-  font-size: 0.18rem;
-  color: #959599;
-  margin-bottom: 2rem;
 }

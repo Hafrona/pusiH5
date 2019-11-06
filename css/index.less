@@ -1,23 +1,3 @@
-header {
-    padding-left: 0.3rem;
-    .logo {
-        margin: 0.3rem 0;
-        width: 2.25rem;
-        height: 0.46rem;
-
-        a {
-            display: flex;
-            width: 100%;
-            height: 100%;
-
-            img {
-                width: 100%;
-                height: 100%;
-            }
-        }
-    }
-}
-
 .content {
     width: 100%;
 
@@ -92,6 +72,7 @@ header {
                         border: 1px solid #cecece;
                         padding: 0.05rem 0.07rem;
                         border-radius: 0.1rem;
+                        
                     }
                 }
             }
@@ -185,10 +166,10 @@ header {
                 &::after {
                     content: ' ';
                     width: 100%;
-                    height: 0.01rem;
+                    height: 0.03rem;
                     background-color: #000;
                     position: absolute;
-                    bottom: 5px;
+                    bottom: 10px;
                     left: 0px;
                 }
 
@@ -209,7 +190,7 @@ header {
                             rgba(49, 93, 174, 0.5) 90%,
                             rgba(49, 93, 174, .5) 100%);
                     position: absolute;
-                    top: -1px;
+                    top: 0px;
                     left: 0px;
                 }
 
@@ -349,28 +330,29 @@ header {
         background-color: var(--themeBackgroundColor);
         padding: 0.8rem 0;
         position: relative;
-        &::after{
+
+        &::after {
             content: " ";
             width: 80%;
             height: 0.03rem;
-            background:linear-gradient(to right,
-                rgba(49,93,173,.0)0%,
-                rgba(49,93,173,.2)10%,
-                rgba(49,93,173,.4)20%,
-                rgba(49,93,173,.6)30%,
-                rgba(49,93,173,.9)40%,
-                rgba(29,154,206,.9)50%,
-                rgba(29,154,206,.8)60%,
-                rgba(29,154,206,.6)70%,
-                rgba(29,154,206,.4)80%,
-                rgba(29,154,206,.2)90%,
-                rgba(29,154,206,.0)100%
-            );
+            background: linear-gradient(to right,
+                    rgba(49, 93, 173, .0)0%,
+                    rgba(49, 93, 173, .2)10%,
+                    rgba(49, 93, 173, .4)20%,
+                    rgba(49, 93, 173, .6)30%,
+                    rgba(49, 93, 173, .9)40%,
+                    rgba(29, 154, 206, .9)50%,
+                    rgba(29, 154, 206, .8)60%,
+                    rgba(29, 154, 206, .6)70%,
+                    rgba(29, 154, 206, .4)80%,
+                    rgba(29, 154, 206, .2)90%,
+                    rgba(29, 154, 206, .0)100%);
             position: absolute;
-            top:0;
+            top: 0;
             left: 50%;
             transform: translateX(-50%);
         }
+
         ul {
             display: flex;
             flex-direction: column;
@@ -436,6 +418,7 @@ header {
     // 关于我们
     .about {
         height: 6.5rem;
+
         h2 {
 
             font-size: 0.5rem;
@@ -443,59 +426,15 @@ header {
         }
     }
 }
-
-// 底部
-footer {
-    h2 {
-        font-size: 0.28rem;
-        margin-bottom: 0.2rem;
-        padding-left: 0.3rem;
-    }
-
-    ul {
-        padding:0 1.5rem 0 0.7rem;
-        margin-bottom: 0.6rem;
-        li {
-            list-style-type: disc;
-            font-size: 0.25rem;
-            color: var(--textColor);
-            margin-bottom: 0.1rem;
-        }
-    }
-    .map{
-        border-radius: 0.1rem;
-        width: 7rem;
-        height: 3.7rem;
-        background-color: #fff;
-        margin:0 auto;
-    }
-    .pusi-code{
-        margin-top: 0.6rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        h4{
-            font-size: 0.2rem;
-            color: #959599;
+// 解决在4英寸的屏幕下，ui课程介绍下的标签文字被挤换行
+@media screen and(max-width:350px){
+    .ui-label{
+        li{
+            padding: 0px !important;
             span{
-                margin:0 0.15rem;
+                display: inline-block;
+                transform: scale(0.8);
             }
-            margin-bottom: 0.4rem;
-        }
-        .code{
-            margin-bottom: 0.3rem;
-            display: flex;
-            width: 80%;
-            justify-content:center ;
-            img{
-                width: 40%;
-                margin:0 0.3rem;
-            }
-        }
-        .copy{
-            font-size: 0.18rem;
-            color: #959599;
-            margin-bottom: 2rem;
         }
     }
 }

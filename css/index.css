@@ -1,20 +1,3 @@
-header {
-  padding-left: 0.3rem;
-}
-header .logo {
-  margin: 0.3rem 0;
-  width: 2.25rem;
-  height: 0.46rem;
-}
-header .logo a {
-  display: flex;
-  width: 100%;
-  height: 100%;
-}
-header .logo a img {
-  width: 100%;
-  height: 100%;
-}
 .content {
   width: 100%;
 }
@@ -153,10 +136,10 @@ header .logo a img {
 .content .curriculum .touch-swiper .curriculum-slide::after {
   content: ' ';
   width: 100%;
-  height: 0.01rem;
+  height: 0.03rem;
   background-color: #000;
   position: absolute;
-  bottom: 5px;
+  bottom: 10px;
   left: 0px;
 }
 .content .curriculum .touch-swiper .curriculum-slide::before {
@@ -165,7 +148,7 @@ header .logo a img {
   height: 0.02rem;
   background: linear-gradient(to right, rgba(26, 165, 219, 0.4) 0%, rgba(26, 165, 219, 0.5) 10%, rgba(26, 165, 219, 0.6) 20%, rgba(26, 165, 219, 0.8) 30%, rgba(26, 165, 219, 0.8) 40%, rgba(49, 93, 174, 0.9) 50%, rgba(49, 93, 174, 0.8) 60%, rgba(49, 93, 174, 0.6) 70%, rgba(49, 93, 174, 0.5) 80%, rgba(49, 93, 174, 0.5) 90%, rgba(49, 93, 174, 0.5) 100%);
   position: absolute;
-  top: -1px;
+  top: 0px;
   left: 0px;
 }
 .content .curriculum .touch-swiper .curriculum-slide ul {
@@ -340,54 +323,12 @@ header .logo a img {
   font-size: 0.5rem;
   color: var(--textColor);
 }
-footer h2 {
-  font-size: 0.28rem;
-  margin-bottom: 0.2rem;
-  padding-left: 0.3rem;
-}
-footer ul {
-  padding: 0 1.5rem 0 0.7rem;
-  margin-bottom: 0.6rem;
-}
-footer ul li {
-  list-style-type: disc;
-  font-size: 0.25rem;
-  color: var(--textColor);
-  margin-bottom: 0.1rem;
-}
-footer .map {
-  border-radius: 0.1rem;
-  width: 7rem;
-  height: 3.7rem;
-  background-color: #fff;
-  margin: 0 auto;
-}
-footer .pusi-code {
-  margin-top: 0.6rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-footer .pusi-code h4 {
-  font-size: 0.2rem;
-  color: #959599;
-  margin-bottom: 0.4rem;
-}
-footer .pusi-code h4 span {
-  margin: 0 0.15rem;
-}
-footer .pusi-code .code {
-  margin-bottom: 0.3rem;
-  display: flex;
-  width: 80%;
-  justify-content: center ;
-}
-footer .pusi-code .code img {
-  width: 40%;
-  margin: 0 0.3rem;
-}
-footer .pusi-code .copy {
-  font-size: 0.18rem;
-  color: #959599;
-  margin-bottom: 2rem;
+@media screen and (max-width: 350px) {
+  .ui-label li {
+    padding: 0px !important;
+  }
+  .ui-label li span {
+    display: inline-block;
+    transform: scale(0.8);
+  }
 }
