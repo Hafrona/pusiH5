@@ -107,33 +107,25 @@
   border-bottom: 0.01rem solid #000;
 }
 .content .curriculum .touch-swiper {
+  width: 100%;
+}
+.content .curriculum .touch-swiper .swiper-slide {
+  width: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.content .curriculum .touch-swiper .left-touch {
-  width: 12%;
-  position: relative;
-}
-.content .curriculum .touch-swiper .left-touch::after {
-  content: ' ';
-  width: 0.4rem;
-  height: 0.4rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  border-left: 0.05rem solid #fff;
-  border-top: 0.05rem solid #fff;
-  transform: translateY(-50%) translateX(-25%) rotate(-45deg);
-}
-.content .curriculum .touch-swiper .curriculum-slide {
-  width: 76%;
+.content .curriculum .touch-swiper .swiper-slide .curriculum-swiper {
+  width: 77%;
   height: 5.48rem;
   background-color: var(--themeBackgroundColor);
+  padding: 0 0.4rem;
   border: 0.01rem solid #000000;
   position: relative;
   margin-bottom: 0.3rem;
 }
-.content .curriculum .touch-swiper .curriculum-slide::after {
-  content: ' ';
+.content .curriculum .touch-swiper .swiper-slide .curriculum-swiper::after {
+  content: " ";
   width: 100%;
   height: 0.02rem;
   background-color: #000;
@@ -141,8 +133,8 @@
   bottom: 3px;
   left: 0px;
 }
-.content .curriculum .touch-swiper .curriculum-slide::before {
-  content: ' ';
+.content .curriculum .touch-swiper .swiper-slide .curriculum-swiper::before {
+  content: " ";
   width: 100%;
   height: 0.02rem;
   background: linear-gradient(to right, rgba(26, 165, 219, 0.4) 0%, rgba(26, 165, 219, 0.5) 10%, rgba(26, 165, 219, 0.6) 20%, rgba(26, 165, 219, 0.8) 30%, rgba(26, 165, 219, 0.8) 40%, rgba(49, 93, 174, 0.9) 50%, rgba(49, 93, 174, 0.8) 60%, rgba(49, 93, 174, 0.6) 70%, rgba(49, 93, 174, 0.5) 80%, rgba(49, 93, 174, 0.5) 90%, rgba(49, 93, 174, 0.5) 100%);
@@ -150,16 +142,7 @@
   top: 0px;
   left: 0px;
 }
-.content .curriculum .touch-swiper .curriculum-slide ul {
-  height: 100%;
-  padding: 0 0.4rem;
-  z-index: 100;
-}
-.content .curriculum .touch-swiper .curriculum-slide ul li {
-  height: 100%;
-  position: relative;
-}
-.content .curriculum .touch-swiper .curriculum-slide ul li .curriculum-title {
+.content .curriculum .touch-swiper .swiper-slide .curriculum-swiper .curriculum-title {
   height: 40%;
   display: flex;
   flex-direction: column;
@@ -167,45 +150,71 @@
   border-bottom: 0.01rem solid #474747;
   padding-bottom: 0.2rem;
 }
-.content .curriculum .touch-swiper .curriculum-slide ul li .curriculum-title h2 {
+.content .curriculum .touch-swiper .swiper-slide .curriculum-swiper .curriculum-title h2 {
   font-size: 0.7rem;
   font-weight: normal;
 }
-.content .curriculum .touch-swiper .curriculum-slide ul li .curriculum-title h3 {
+.content .curriculum .touch-swiper .swiper-slide .curriculum-swiper .curriculum-title h3 {
   font-size: 0.44rem;
   font-weight: normal;
   color: var(--textColor);
 }
-.content .curriculum .touch-swiper .curriculum-slide ul li .curriculum-content {
+.content .curriculum .touch-swiper .swiper-slide .curriculum-swiper .curriculum-content {
   border-top: 0.01rem solid #2a2a2a;
   font-size: 0.26rem;
   padding: 0.2rem 0 0 0;
   line-height: 0.48rem;
   z-index: 100;
+  letter-spacing: 0.05rem;
 }
-.content .curriculum .touch-swiper .curriculum-slide ul li .curriculum-content span {
+.content .curriculum .touch-swiper .swiper-slide .curriculum-swiper .curriculum-content span {
   z-index: 100;
 }
-.content .curriculum .touch-swiper .curriculum-slide ul li p {
+.content .curriculum .touch-swiper .swiper-slide .curriculum-swiper p {
   font-size: 1.76rem;
   position: absolute;
   bottom: -0.2rem;
-  right: -0.4rem;
+  right: 0rem;
   color: #515050;
   opacity: 0.3;
   z-index: 0;
 }
-.content .curriculum .touch-swiper .right-touch {
+.content .curriculum .touch-swiper .swiper-button-prev {
+  -webkit-tap-highlight-color: transparent;
   width: 12%;
-  position: relative;
+  outline: none;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-25%);
 }
-.content .curriculum .touch-swiper .right-touch::after {
-  content: ' ';
+.content .curriculum .touch-swiper .swiper-button-prev::after {
+  content: " ";
   width: 0.4rem;
   height: 0.4rem;
   position: absolute;
   top: 50%;
-  right: 50%;
+  right: 0%;
+  border-left: 0.05rem solid #fff;
+  border-top: 0.05rem solid #fff;
+  transform: translateY(-50%) translateX(-25%) rotate(-45deg);
+}
+.content .curriculum .touch-swiper .swiper-button-next {
+  width: 12%;
+  outline: none;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-25%);
+  -webkit-tap-highlight-color: transparent;
+}
+.content .curriculum .touch-swiper .swiper-button-next::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  width: 0.4rem;
+  height: 0.4rem;
   border-left: 0.05rem solid #fff;
   border-top: 0.05rem solid #fff;
   transform: translateY(-50%) translateX(25%) rotate(135deg);
