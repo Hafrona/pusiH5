@@ -11,6 +11,7 @@
     <!-- 通用样式 -->
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/introduce.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
 </head>
 
 <script src="../js/adaptive.js"></script>
@@ -174,12 +175,50 @@
         <div class="outline">
             <h2>课程大纲</h2>
             <div class="outline-swiper">
-                <div class="outline-left-btn">
-
-                </div>
-                <div class="outline-slide">
-                    <ul>
-                        <li>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <ul>
+                                <li>
+                                    <h2>培训时间</h2>
+                                </li>
+                                <li>
+                                    <p>校区可能会根据实际情况有所调整</p>
+                                </li>
+                                <li>
+                                    <p>详情可咨询老师</p>
+                                </li>
+                                <li>
+                                    <p>三位一体的指导服务</p>
+                                </li>
+                                <li>
+                                    <p>为每一位学子的学习保驾护航</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul>
+                                <li>
+                                    <h2>项目丰富</h2>
+                                </li>
+                                <li>
+                                    <p>0基础0经验的小白人员</p>
+                                </li>
+                                <li>
+                                    <p>想通过最低的成本来试一下自己</p>
+                                </li>
+                                <li>
+                                    <p>是否适合做Java编程以及UI设计师</p>
+                                </li>
+                                <li>
+                                    <p>相关工作的转型人员</p>
+                                </li>
+                                <li>
+                                    <p>纯面授，严格的教学管理制度</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
                             <ul>
                                 <li>
                                     <h2>教学模式</h2>
@@ -200,13 +239,11 @@
                                     <p>一位助教，一位班主任</p>
                                 </li>
                             </ul>
-                        </li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
-                <div class="outline-right-btn">
-
+                        </div>
+                    </div>
+                    <!-- 如果需要导航按钮 -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
             </div>
         </div>
@@ -317,7 +354,9 @@
             <li>邮箱：pusi@miaohaigou.com</li>
             <li>地址：莆田市城厢区华林经济开发区腾飞路66号骠骑大厦4层</li>
         </ul>
-        <div class="map"></div>
+        <div class="footer-map">
+            <div id="map"></div>
+        </div>
         <div class="pusi-code">
             <h4><span>关注公众账号</span><span>了解更多资讯</span></h4>
             <div class="code">
@@ -375,5 +414,14 @@
         </ul>
     </div>
 </body>
+<!-- jq -->
+<script src="../js/jquery.js"></script>
+<!-- 百度地图 -->
+<script type="text/javascript"
+    src="http://api.map.baidu.com/getscript?v=3.0&ak=FnGGQGcUfFUC53CqGRGU8UeaR8BhxCmG"></script>
+<script src="../js/swiper.min.js"></script>
+<!-- 公共部分 -->
+<script src="../js/common.js"></script>
+<script src="../js/pageJs/introduce.js"></script>
 
 </html>

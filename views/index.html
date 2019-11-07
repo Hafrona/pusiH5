@@ -13,6 +13,7 @@
     <!-- 通用样式 -->
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
 </head>
 
 <body>
@@ -86,8 +87,9 @@
                                 <h3>打造月薪过万的UI设计师</h3>
                             </div>
                             <div class="curriculum-content">
-                                全新升级全链路ui3.0，5步缔造顶尖UI设计师，更符合企业对人才的实际需求，顺应互联网时代趋势,综合用户的需求和业务目标
+                                <span>全新升级全链路ui3.0，5步缔造顶尖UI设计师，更符合企业对人才的实际需求，顺应互联网时代趋势,综合用户的需求和业务目标</span>
                             </div>
+                            <p>02</p>
                         </li>
                         <!-- <li></li> -->
                     </ul>
@@ -183,13 +185,25 @@
         <div class="pusi-familiar">
             <h2>璞思大家庭</h2>
             <div class="pusi-swiper">
-
+                <div class="swiper-container" id="familiarSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide swiperList">
+                            <img src="../images/pusiswiper02.jpg" alt="轮播图">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../images/pusiswiper01.jpg" alt="轮播图">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../images/pusiswiper03.jpg" alt="轮播图">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- 关于我们 -->
         <div class="about">
             <h2>关于我们</h2>
-            <video src=""></video>
+            <video src="#" controls="controls"></video>
         </div>
     </div>
 
@@ -203,7 +217,9 @@
             <li>邮箱：pusi@miaohaigou.com</li>
             <li>地址：莆田市城厢区华林经济开发区腾飞路66号骠骑大厦4层</li>
         </ul>
-        <div class="map"></div>
+        <div class="footer-map">
+            <div id="map"></div>
+        </div>
         <div class="pusi-code">
             <h4><span>关注公众账号</span><span>了解更多资讯</span></h4>
             <div class="code">
@@ -261,5 +277,15 @@
         </ul>
     </div>
 </body>
+<!-- 轮播图插件 -->
+<script src="../js/swiper.min.js"></script>
+<!-- jq -->
+<script src="../js/jquery.js"></script>
+<!-- 百度地图 -->
+<script type="text/javascript"
+    src="http://api.map.baidu.com/getscript?v=3.0&ak=FnGGQGcUfFUC53CqGRGU8UeaR8BhxCmG"></script>
+<!-- 公共部分 -->
+<script src="../js/common.js"></script>
+<script src="../js/pageJs/index.js"></script>
 
 </html>

@@ -201,36 +201,24 @@
   color: var(--textColor);
   padding-left: 0.25rem;
 }
-.content .outline .outline-swiper {
+.content .outline .outline-swiper .swiper-container .swiper-wrapper .swiper-slide {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.content .outline .outline-swiper .outline-left-btn {
-  width: 12%;
-  position: relative;
-}
-.content .outline .outline-swiper .outline-left-btn::after {
-  content: ' ';
-  width: 0.4rem;
-  height: 0.4rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  border-left: 0.05rem solid #fff;
-  border-top: 0.05rem solid #fff;
-  transform: translateY(-50%) translateX(-25%) rotate(-45deg);
-}
-.content .outline .outline-swiper .outline-slide {
-  width: 76%;
+.content .outline .outline-swiper .swiper-container .swiper-wrapper .swiper-slide ul {
   background-color: #424242;
+  text-align: center;
+  position: relative;
+  height: 4.22rem;
+  width: 76%;
   border-radius: 0.3rem;
   overflow: hidden;
 }
-.content .outline .outline-swiper .outline-slide > ul {
-  text-align: center;
-  position: relative;
-  padding-bottom: 0.2rem;
+.content .outline .outline-swiper .swiper-container .swiper-wrapper .swiper-slide ul li {
+  width: 100%;
 }
-.content .outline .outline-swiper .outline-slide > ul::after {
+.content .outline .outline-swiper .swiper-container .swiper-wrapper .swiper-slide ul li::after {
   content: " ";
   width: 100%;
   height: 0.1rem;
@@ -239,7 +227,7 @@
   top: 0rem;
   left: 0rem;
 }
-.content .outline .outline-swiper .outline-slide > ul::before {
+.content .outline .outline-swiper .swiper-container .swiper-wrapper .swiper-slide ul li::before {
   content: " ";
   width: 100%;
   height: 0.15rem;
@@ -248,7 +236,7 @@
   bottom: 0rem;
   left: 0rem;
 }
-.content .outline .outline-swiper .outline-slide > ul li h2 {
+.content .outline .outline-swiper .swiper-container .swiper-wrapper .swiper-slide ul li h2 {
   padding: 0.45rem 0.8rem 0.1rem 0.8rem;
   display: inline-block;
   font-size: 0.5rem;
@@ -256,22 +244,47 @@
   border-bottom: 0.01rem solid #747474;
   margin-bottom: 0.2rem;
 }
-.content .outline .outline-swiper .outline-slide > ul li p {
+.content .outline .outline-swiper .swiper-container .swiper-wrapper .swiper-slide ul li p {
   color: var(--textColor);
   font-size: 0.3rem;
   line-height: 0.5rem;
 }
-.content .outline .outline-swiper .outline-right-btn {
+.content .outline .outline-swiper .swiper-button-prev {
+  -webkit-tap-highlight-color: transparent;
   width: 12%;
-  position: relative;
+  outline: none;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-25%);
 }
-.content .outline .outline-swiper .outline-right-btn::after {
+.content .outline .outline-swiper .swiper-button-prev::after {
   content: ' ';
   width: 0.4rem;
   height: 0.4rem;
   position: absolute;
   top: 50%;
-  right: 50%;
+  right: 0%;
+  border-left: 0.05rem solid #fff;
+  border-top: 0.05rem solid #fff;
+  transform: translateY(-50%) translateX(-25%) rotate(-45deg);
+}
+.content .outline .outline-swiper .swiper-button-next {
+  width: 12%;
+  outline: none;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-25%);
+  -webkit-tap-highlight-color: transparent;
+}
+.content .outline .outline-swiper .swiper-button-next::after {
+  content: ' ';
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  width: 0.4rem;
+  height: 0.4rem;
   border-left: 0.05rem solid #fff;
   border-top: 0.05rem solid #fff;
   transform: translateY(-50%) translateX(25%) rotate(135deg);
@@ -304,9 +317,14 @@
   display: flex;
   justify-content: center;
   position: relative;
+  height: 0;
+  padding-bottom: 50%;
 }
 .content .case .case-list .case-photo img {
+  position: absolute;
+  top: 0px;
   width: 90%;
+  height: 90%;
   z-index: 100;
 }
 .content .case .case-list .case-photo span {
@@ -316,7 +334,7 @@
   background: linear-gradient(to bottom, #4a4a4a, #252525);
   z-index: 10;
   position: absolute;
-  bottom: -20px;
+  bottom: 0px;
 }
 .content .case .case-list .case-text {
   font-size: 0.3rem;
@@ -327,6 +345,14 @@
 .content .case .case-list .miao-shop img {
   width: 45%;
 }
+.content .case .case-list .miao-shop img:nth-child(1) {
+  position: absolute;
+  left: 5%;
+}
+.content .case .case-list .miao-shop img:nth-child(2) {
+  position: absolute;
+  right: 5%;
+}
 .content .case .case-list .chengXiangQu,
 .content .case .case-list .wisdom110,
 .content .case .case-list .painting {
@@ -335,6 +361,6 @@
 .content .case .case-list .mazu span {
   width: 60%;
   position: absolute;
-  bottom: -20px;
+  bottom: 0;
   left: 20px;
 }

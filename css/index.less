@@ -72,7 +72,7 @@
                         border: 1px solid #cecece;
                         padding: 0.05rem 0.07rem;
                         border-radius: 0.1rem;
-                        
+
                     }
                 }
             }
@@ -158,7 +158,7 @@
                 width: 76%;
                 height: 5.48rem;
                 background-color: var(--themeBackgroundColor);
-                padding: 0 0.4rem;
+
                 border: 0.01rem solid #000000;
                 position: relative;
                 margin-bottom: 0.3rem;
@@ -166,10 +166,10 @@
                 &::after {
                     content: ' ';
                     width: 100%;
-                    height: 0.03rem;
+                    height: 0.02rem;
                     background-color: #000;
                     position: absolute;
-                    bottom: 10px;
+                    bottom: 3px;
                     left: 0px;
                 }
 
@@ -196,10 +196,12 @@
 
                 ul {
                     height: 100%;
+                    padding: 0 0.4rem;
+                    z-index: 100;
 
                     li {
                         height: 100%;
-
+                        position: relative;
                         .curriculum-title {
                             height: 40%;
                             display: flex;
@@ -222,11 +224,26 @@
 
                         .curriculum-content {
                             border-top: 0.01rem solid #2a2a2a;
-                            height: 60%;
+                            // height: 60%;
                             font-size: 0.26rem;
                             padding: 0.2rem 0 0 0;
                             line-height: 0.48rem;
+                            z-index: 100;
+                            span{
+                                z-index: 100;
+                            }
                         }
+
+                        p {
+                            font-size: 1.76rem;
+                            position: absolute;
+                            bottom: -0.2rem;
+                            right: -0.4rem;
+                            color: #515050;
+                            opacity: 0.3;
+                            z-index: 0;
+                        }
+
                     }
                 }
 
@@ -405,33 +422,69 @@
 
     //璞思大家庭
     .pusi-familiar {
-        height: 5rem;
-
         h2 {
             font-size: 0.5rem;
+            font-weight: normal;
             color: var(--textColor);
+            text-align: center;
+            margin: 0.8rem 0 0.6rem;
         }
 
-        .pusi-swiper {}
+        .pusi-swiper {
+            width: 90%;
+            margin: 0 auto;
+            padding-bottom: 0.8rem;
+            border-bottom: 0.03rem solid #454545;
+
+            #familiarSwiper {
+                width: 100%;
+                // height: 75%;
+                position: relative;
+
+                .swiper-slide {
+                    width: 3rem;
+                    height: 2.3rem;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
     }
 
     // 关于我们
     .about {
         height: 6.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0.7rem;
 
         h2 {
-
+            text-align: center;
+            margin: 0.8rem 0 0.6rem;
             font-size: 0.5rem;
+            font-weight: normal;
             color: var(--textColor);
+        }
+
+        video {
+            width: 90%;
+            height: 4.36rem;
+            border-radius: 0.2rem;
         }
     }
 }
+
 // 解决在4英寸的屏幕下，ui课程介绍下的标签文字被挤换行
-@media screen and(max-width:350px){
-    .ui-label{
-        li{
+@media screen and(max-width:350px) {
+    .ui-label {
+        li {
             padding: 0px !important;
-            span{
+
+            span {
                 display: inline-block;
                 transform: scale(0.8);
             }

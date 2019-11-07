@@ -128,7 +128,6 @@
   width: 76%;
   height: 5.48rem;
   background-color: var(--themeBackgroundColor);
-  padding: 0 0.4rem;
   border: 0.01rem solid #000000;
   position: relative;
   margin-bottom: 0.3rem;
@@ -136,10 +135,10 @@
 .content .curriculum .touch-swiper .curriculum-slide::after {
   content: ' ';
   width: 100%;
-  height: 0.03rem;
+  height: 0.02rem;
   background-color: #000;
   position: absolute;
-  bottom: 10px;
+  bottom: 3px;
   left: 0px;
 }
 .content .curriculum .touch-swiper .curriculum-slide::before {
@@ -153,9 +152,12 @@
 }
 .content .curriculum .touch-swiper .curriculum-slide ul {
   height: 100%;
+  padding: 0 0.4rem;
+  z-index: 100;
 }
 .content .curriculum .touch-swiper .curriculum-slide ul li {
   height: 100%;
+  position: relative;
 }
 .content .curriculum .touch-swiper .curriculum-slide ul li .curriculum-title {
   height: 40%;
@@ -176,10 +178,22 @@
 }
 .content .curriculum .touch-swiper .curriculum-slide ul li .curriculum-content {
   border-top: 0.01rem solid #2a2a2a;
-  height: 60%;
   font-size: 0.26rem;
   padding: 0.2rem 0 0 0;
   line-height: 0.48rem;
+  z-index: 100;
+}
+.content .curriculum .touch-swiper .curriculum-slide ul li .curriculum-content span {
+  z-index: 100;
+}
+.content .curriculum .touch-swiper .curriculum-slide ul li p {
+  font-size: 1.76rem;
+  position: absolute;
+  bottom: -0.2rem;
+  right: -0.4rem;
+  color: #515050;
+  opacity: 0.3;
+  z-index: 0;
 }
 .content .curriculum .touch-swiper .right-touch {
   width: 12%;
@@ -309,19 +323,49 @@
   width: 100%;
   height: 100%;
 }
-.content .pusi-familiar {
-  height: 5rem;
-}
 .content .pusi-familiar h2 {
   font-size: 0.5rem;
+  font-weight: normal;
   color: var(--textColor);
+  text-align: center;
+  margin: 0.8rem 0 0.6rem;
+}
+.content .pusi-familiar .pusi-swiper {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 0.8rem;
+  border-bottom: 0.03rem solid #454545;
+}
+.content .pusi-familiar .pusi-swiper #familiarSwiper {
+  width: 100%;
+  position: relative;
+}
+.content .pusi-familiar .pusi-swiper #familiarSwiper .swiper-slide {
+  width: 3rem;
+  height: 2.3rem;
+}
+.content .pusi-familiar .pusi-swiper #familiarSwiper .swiper-slide img {
+  width: 100%;
+  height: 100%;
 }
 .content .about {
   height: 6.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0.7rem;
 }
 .content .about h2 {
+  text-align: center;
+  margin: 0.8rem 0 0.6rem;
   font-size: 0.5rem;
+  font-weight: normal;
   color: var(--textColor);
+}
+.content .about video {
+  width: 90%;
+  height: 4.36rem;
+  border-radius: 0.2rem;
 }
 @media screen and (max-width: 350px) {
   .ui-label li {

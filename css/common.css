@@ -31,12 +31,19 @@ footer ul li {
   color: #959595;
   margin-bottom: 0.1rem;
 }
-footer .map {
+footer .footer-map {
   border-radius: 0.1rem;
   width: 7rem;
   height: 3.7rem;
   background-color: #fff;
   margin: 0 auto;
+  padding: 0.05rem;
+}
+footer .footer-map #map {
+  border-radius: 0.1rem;
+  width: 100%;
+  height: 100%;
+  border: 0.02rem solid #ccc;
 }
 footer .pusi-code {
   margin-top: 0.6rem;
@@ -83,11 +90,13 @@ footer .pusi-code .copy {
   position: fixed;
   bottom: 0.3rem;
   width: 100%;
+  z-index: 1000;
 }
 .tabBar ul {
   display: flex;
   width: 80%;
   margin: 0 auto;
+  align-items: flex-end;
 }
 .tabBar ul li {
   flex: 1;
@@ -107,15 +116,14 @@ footer .pusi-code .copy {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .tabBar ul li a .tabBar-photo {
-  height: 70%;
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  margin-bottom: 0.05rem;
 }
 .tabBar ul li a .tabBar-photo img {
   width: 60%;
 }
 .tabBar ul li a p {
-  height: 30%;
   font-size: 0.2rem;
 }
