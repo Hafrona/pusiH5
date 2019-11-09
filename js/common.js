@@ -34,15 +34,7 @@ $(function () {
         });
         // 打开信息窗口
         marker.addEventListener("click", function (e) {
-            console.log(e)
-            // var opts = {
-            //     width: 250,     // 信息窗口宽度    
-            //     height: 100,     // 信息窗口高度    
-            //     title: "璞思",  // 信息窗口标题  
-            //     enableAutoPan:false
-            // }
-            // var infoWindow = new BMap.InfoWindow("璞思学校", opts);  // 创建信息窗口对象    
-            // map.openInfoWindow(infoWindow, map.getCenter());      // 打开信息窗口
+            
         });
     }
     pusiLocation()

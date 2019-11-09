@@ -17,6 +17,7 @@
       font-size: 0.88rem;
       margin: 0;
       font-weight: bold;
+      text-shadow: 0px 2px 3px #000;
     }
 
     p {
@@ -36,13 +37,13 @@
     margin-bottom: 0.22rem;
     border: 0.01rem solid #000000;
 
-    > ul {
+    >ul {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
 
-      > li {
+      >li {
         padding-bottom: 0.1rem;
 
         p {
@@ -53,6 +54,7 @@
 
         h2 {
           font-size: 0.7rem;
+          text-shadow: 0px -1px 3px #000;
         }
 
         h3 {
@@ -104,12 +106,14 @@
 
         h2 {
           font-size: 1rem;
+          text-shadow: 0px -1px 3px #000;
         }
 
         h3 {
           font-weight: normal;
           display: flex;
           align-items: center;
+          text-shadow: 0px -1px 3px #000;
 
           span {
             font-size: 0.88rem;
@@ -132,14 +136,17 @@
   // 课程介绍
   .curriculum {
     border-bottom: 0.01rem solid #000;
+
     // 轮播图
     .touch-swiper {
       width: 100%;
+
       .swiper-slide {
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
+
         .curriculum-swiper {
           width: 77%;
           height: 5.48rem;
@@ -163,24 +170,23 @@
             content: " ";
             width: 100%;
             height: 0.02rem;
-            background: linear-gradient(
-              to right,
-              rgba(26, 165, 219, 0.4) 0%,
-              rgba(26, 165, 219, 0.5) 10%,
-              rgba(26, 165, 219, 0.6) 20%,
-              rgba(26, 165, 219, 0.8) 30%,
-              rgba(26, 165, 219, 0.8) 40%,
-              rgba(49, 93, 174, 0.9) 50%,
-              rgba(49, 93, 174, 0.8) 60%,
-              rgba(49, 93, 174, 0.6) 70%,
-              rgba(49, 93, 174, 0.5) 80%,
-              rgba(49, 93, 174, 0.5) 90%,
-              rgba(49, 93, 174, 0.5) 100%
-            );
+            background: linear-gradient(to right,
+                rgba(26, 165, 219, 0.4) 0%,
+                rgba(26, 165, 219, 0.5) 10%,
+                rgba(26, 165, 219, 0.6) 20%,
+                rgba(26, 165, 219, 0.8) 30%,
+                rgba(26, 165, 219, 0.8) 40%,
+                rgba(49, 93, 174, 0.9) 50%,
+                rgba(49, 93, 174, 0.8) 60%,
+                rgba(49, 93, 174, 0.6) 70%,
+                rgba(49, 93, 174, 0.5) 80%,
+                rgba(49, 93, 174, 0.5) 90%,
+                rgba(49, 93, 174, 0.5) 100%);
             position: absolute;
             top: 0px;
             left: 0px;
           }
+
           .curriculum-title {
             height: 40%;
             display: flex;
@@ -208,21 +214,19 @@
             line-height: 0.48rem;
             z-index: 100;
             letter-spacing: 0.05rem;
-            span {
-              z-index: 100;
-            }
           }
+
           p {
             font-size: 1.76rem;
             position: absolute;
-            bottom: -0.2rem;
+            bottom:-0.2rem;
             right: 0rem;
             color: #515050;
             opacity: 0.3;
-            z-index: 0;
           }
         }
       }
+
       .swiper-button-prev {
         -webkit-tap-highlight-color: transparent;
         width: 12%;
@@ -245,6 +249,7 @@
           transform: translateY(-50%) translateX(-25%) rotate(-45deg);
         }
       }
+
       .swiper-button-next {
         width: 12%;
         outline: none;
@@ -268,9 +273,9 @@
       }
     }
 
-    > ul {
+    >ul {
       margin-bottom: 0.7rem;
-      font-size: 0.22rem;
+      font-size: 0.23rem;
       display: flex;
       color: var(--textColor);
       justify-content: center;
@@ -353,20 +358,18 @@
       content: " ";
       width: 80%;
       height: 0.03rem;
-      background: linear-gradient(
-        to right,
-        rgba(49, 93, 173, 0) 0%,
-        rgba(49, 93, 173, 0.2) 10%,
-        rgba(49, 93, 173, 0.4) 20%,
-        rgba(49, 93, 173, 0.6) 30%,
-        rgba(49, 93, 173, 0.9) 40%,
-        rgba(29, 154, 206, 0.9) 50%,
-        rgba(29, 154, 206, 0.8) 60%,
-        rgba(29, 154, 206, 0.6) 70%,
-        rgba(29, 154, 206, 0.4) 80%,
-        rgba(29, 154, 206, 0.2) 90%,
-        rgba(29, 154, 206, 0) 100%
-      );
+      background: linear-gradient(to right,
+          rgba(49, 93, 173, 0) 0%,
+          rgba(49, 93, 173, 0.2) 10%,
+          rgba(49, 93, 173, 0.4) 20%,
+          rgba(49, 93, 173, 0.6) 30%,
+          rgba(49, 93, 173, 0.9) 40%,
+          rgba(29, 154, 206, 0.9) 50%,
+          rgba(29, 154, 206, 0.8) 60%,
+          rgba(29, 154, 206, 0.6) 70%,
+          rgba(29, 154, 206, 0.4) 80%,
+          rgba(29, 154, 206, 0.2) 90%,
+          rgba(29, 154, 206, 0) 100%);
       position: absolute;
       top: 0;
       left: 50%;
@@ -473,10 +476,19 @@
       color: var(--textColor);
     }
 
-    video {
+    .about-video {
       width: 90%;
       height: 4.36rem;
       border-radius: 0.2rem;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      video{
+        width: 100%;
+        border-radius: 0.2rem;
+        // height: 100%;
+      }
     }
   }
 }

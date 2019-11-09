@@ -26,10 +26,18 @@
   display: flex;
   align-items: flex-end;
 }
+.content .news .news-top-photo {
+  padding-bottom: 50%;
+  height: 0;
+  position: relative;
+}
 .content .news .news-top-photo img {
   width: 102%;
+  height: 100%;
   transform: translateX(-1%);
   box-shadow: 0px 0px 15px #000;
+  position: absolute;
+  top: 0;
 }
 .content .news .news-list {
   display: flex;
